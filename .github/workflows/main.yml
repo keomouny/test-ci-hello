@@ -7,3 +7,6 @@ jobs:
     steps:
       - name: First step
         run: echo "hello world"
+        uses: actions/checkout@v2
+      - name: Execute main python file
+        run: python3 main.py
